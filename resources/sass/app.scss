@@ -1,0 +1,152 @@
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+@font-face {
+    font-family: Vazir;
+    src: url('/public/assets/fonts/Vazirmatn-Regular.woff2');
+}
+
+@font-face {
+    font-family: Vazir-fa;
+    src: url('/public/assets/fonts-fa/Vazirmatn-FD-NL-Regular.woff2');
+}
+
+body {
+    font-family: Vazir;
+}
+
+.g-product-container {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+
+    &:after {
+        content: " ";
+        margin: auto;
+        flex-basis: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .g-product-container {
+        &:after {
+            width: calc(100% - 1.5rem);
+        }
+
+        .g-card {
+            width: calc(100% - 1.5rem);
+            margin: 1.5rem auto 1rem;
+        }
+    }
+
+    #nav-container {
+        justify-content: space-evenly !important;
+    }
+
+    #nav-description {
+        display: none !important;
+    }
+
+    #search_button {
+        display: none !important;
+    }
+
+    #cart {
+        width: 6.5em;
+        font-size: .8em;
+    }
+
+    #search_input {
+        font-size: .8em;
+    }
+
+    #cart {
+        width: 6.5em;
+        font-size: .8em;
+    }
+
+    #footer-area {
+        justify-content: center !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .g-product-container {
+        &:after {
+            width: calc(33% - 1.5rem);
+        }
+
+        .g-card {
+            width: calc(33% - 1.5rem);
+            margin: 1rem auto .5rem;
+        }
+    }
+
+    #nav-container {
+        justify-content: space-evenly !important;
+    }
+
+    #nav-description {
+        display: none !important;
+    }
+
+    #search_button {
+        display: inline !important;
+    }
+
+    #search_input {
+        font-size: .9em;
+    }
+
+    #cart {
+        width: 6.5em;
+        font-size: .9em;
+    }
+
+    #footer-area {
+        justify-content: space-between !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .g-product-container {
+        &:after {
+            width: calc(20% - 1.5rem);
+        }
+
+        .g-card {
+            width: calc(20% - 1.5rem);
+            margin: 1.5rem auto .5rem;
+        }
+    }
+
+    #nav-container {
+        justify-content: space-between !important;
+    }
+
+    #nav-description {
+        display: inline !important;
+    }
+
+    #search_button {
+        display: inline !important;
+    }
+
+    #search_input {
+        font-size: 1em;
+    }
+
+    #cart {
+        width: 6.5em;
+        font-size: 1em;
+    }
+
+    #footer-area {
+        justify-content: space-between !important;
+    }
+}
+
+.cart-items {
+    font-family: Vazir-fa;
+}
